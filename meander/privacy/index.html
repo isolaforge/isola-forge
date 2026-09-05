@@ -111,7 +111,7 @@
     <main>
       <h1>Meander — Privacy Policy &amp; Data Deletion</h1>
       <p class="updated">
-        Application: <code>org.isolaforge.meander</code> · Last updated: 18 August 2026
+        Application: <code>org.isolaforge.meander</code> · Last updated: 5 September 2026
       </p>
 
       <p>
@@ -127,32 +127,105 @@
       </p>
 
       <h2 id="collected">What data we collect</h2>
-      <p>Sign-in happens through Google. The following is stored on our server (Supabase):</p>
+      <p>
+        Sign-in happens through Google. Everything below is stored on our server (Supabase). Text
+        you write yourself appears in only a few places, and each of them is marked in the list.
+      </p>
+
+      <h3>Your account</h3>
       <ul>
         <li>
-          Your Google account identifier. We never receive or store your password — sign-in is
-          handled entirely by Google.
+          The email address of the Google account you sign in with, and the account identifier
+          Google gives us. We never receive or store your Google password — sign-in is handled
+          entirely by Google. Your email address is never shown to other players.
         </li>
-        <li>The nickname you chose (visible to other players).</li>
+      </ul>
+
+      <h3>Your profile, as other players see it</h3>
+      <ul>
+        <li>
+          The nickname you chose. This is <strong>text you write yourself</strong> and is visible to
+          other players.
+        </li>
         <li>Country, inferred from your device settings. This is not precise location.</li>
+        <li>Your character appearance, avatar frame and avatar background.</li>
+        <li>Your selected title and name styling.</li>
+        <li>Your mood, when you set one (a choice from a fixed list, not free text).</li>
+        <li>Your trophies, when each was earned, and the trophy you have chosen to feature.</li>
+        <li>Which crew you belong to, and your role in it.</li>
+      </ul>
+
+      <h3>Your game statistics</h3>
+      <ul>
         <li>Daily step totals — the number of steps per day, never a route or a location.</li>
         <li>
-          Your character appearance, avatar frame and avatar background — cosmetic selections
-          visible to other players.
+          Experience points (XP) and reputation (RP): the current totals, and a daily record of them
+          so that weekly and seasonal comparisons can be shown.
         </li>
-        <li>Your selected title and name styling (visible to other players).</li>
-        <li>Experience points (XP) and reputation (RP) totals.</li>
+        <li>Steps walked and reputation earned per terrain type (forest, lake, mountain and so on).</li>
+        <li>The direction you are currently walking, your town hall stage, and the resources you
+          have donated to it.</li>
+        <li>The steps you have contributed to your crew.</li>
+      </ul>
+
+      <h3>Social features</h3>
+      <ul>
+        <li>Your friendships and pending friend requests, including who sent each request.</li>
         <li>
-          Featured trophy selection, trophy progress, friend and crew memberships, and milestone
-          echoes sent to friends. Echoes are structured event data — they contain no free text.
+          Milestone echoes sent to friends. These are structured event data — they contain no free
+          text.
+        </li>
+        <li>Cheers you send in the weekly rankings. These are fixed message codes, not free text.</li>
+        <li>Which weekly ranking group you were placed in.</li>
+      </ul>
+
+      <h3>Crews</h3>
+      <ul>
+        <li>
+          If you create or manage a crew: its name, description, welcome message, privacy setting,
+          weekly step goal and accumulated steps. The name, description and welcome message are
+          <strong>text you write yourself</strong> and are visible to other players.
         </li>
         <li>
-          Crew name, description and welcome message, if you create or manage a crew. These are
-          visible to other players.
+          A crew activity log: joins, requests, declines and removals, and — for crews you manage —
+          moderator promotions, ownership transfers and setting changes (privacy, join mode, member
+          cap, weekly goal, colour, description and welcome message). Setting changes record only
+          that the change happened and its new value as a code; the description and welcome message
+          texts themselves are not copied into the log. Each entry records the nickname involved at
+          the time it happened, and is removed when that person's account is deleted or when the
+          crew is disbanded.
+        </li>
+      </ul>
+
+      <h3>Safety and moderation</h3>
+      <ul>
+        <li>Players you have blocked.</li>
+        <li>
+          Reports you have submitted about other players, and reports other players have submitted
+          about you: the reason chosen from a fixed list, and an optional
+          <strong>description you write yourself</strong> of up to 280 characters. A note may be added by us
+          when the report is handled.
+        </li>
+        <li>Your setting for who may send you friend requests.</li>
+        <li>
+          Moderation flags on trophies, if a trophy is found to have been obtained in a way the game
+          does not allow.
+        </li>
+      </ul>
+
+      <h3>Cloud backup of your progress</h3>
+      <ul>
+        <li>
+          A backup of your game progress, so it can be restored when you sign in on a new phone. It
+          contains the game data listed above together with the rest of your progress: inventory,
+          crafted items, discoveries, quests, streak and cosmetic ownership.
         </li>
         <li>
-          Safety data: players you have blocked, reports you have submitted about other players, and
-          your setting for who may send you friend requests.
+          Stored alongside the backup: the name your phone reports for itself (for example
+          <code>Pixel 8</code>), shown to you if two phones ever end up holding different progress,
+          and a random identifier for the phone that wrote the backup, used only to tell your own
+          phone apart from a second one. That identifier is not connected to advertising or
+          analytics, is not shared with anyone, and is replaced if you reinstall the app.
         </li>
       </ul>
 
@@ -170,9 +243,10 @@
       <h2 id="use">How the data is used</h2>
       <p>
         Solely to run the game: rankings, friend and crew features, delivering milestone echoes
-        between friends, showing trophy progress to other players, and handling blocks and reports.
-        Other players only ever see your nickname and game statistics — never your email address or
-        any other identifying information.
+        between friends, showing trophy progress to other players, restoring your progress when you
+        sign in on a new phone, and handling blocks, reports and moderation. Other players only ever
+        see your nickname and game statistics — never your email address or any other identifying
+        information.
       </p>
 
       <h2 id="third-parties">Third parties</h2>
@@ -217,19 +291,22 @@
       <h3>What gets deleted</h3>
       <p>
         Everything listed under <a href="#collected">What data we collect</a> is permanently removed
-        from our server: your account identifier, nickname, country, daily step history, cosmetic
-        selections, XP and reputation, trophies, friendships, crew membership, milestone echoes, and
-        your blocks and reports. If you are the owner of a crew, that crew is disbanded as part of
-        the deletion.
+        from our server: your account and email address, nickname, country, daily step history,
+        cosmetic selections, mood, XP and reputation including the daily record of them, per-terrain
+        statistics, trophies and any moderation flags on them, friendships, crew membership,
+        milestone echoes, cheers, your blocks and reports, and the cloud backup of your progress. If
+        you are the owner of a crew, that crew is disbanded as part of the deletion.
       </p>
       <p>
         <strong>Nothing is retained on our server afterwards.</strong> We keep no backup copy of a
-        deleted account.
+        deleted account. This includes entries about you in the activity log of a crew you belonged
+        to — those are removed as part of the deletion, not left behind in that crew's history.
       </p>
       <p>
-        Game progress stored locally on your phone — such as your resources, crafted items and
-        collected curiosities — is not held on our server and is removed when you uninstall the app
-        or clear its data.
+        Some game data never reaches our server at all — height, weight, gender, stride length and
+        the step counter calibration factor. That data lives only on your phone and is removed when
+        you uninstall the app or clear its data. The rest of your progress does have a
+        <a href="#collected">cloud backup</a>, and that backup is deleted along with your account.
       </p>
 
       <h2 id="changes">Changes to this policy</h2>
